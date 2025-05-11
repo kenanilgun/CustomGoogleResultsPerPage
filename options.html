@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Results Per Page Options</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    label { font-weight: bold; }
+    input[type="number"] { width: 60px; }
+    .status { color: green; margin-left: 1em; }
+  </style>
+</head>
+<body>
+  <h2>Google Results Per Page</h2>
+  <form id="options-form">
+    <label for="perPage">Results per page:</label>
+    <input type="number" id="perPage" name="perPage" min="10" max="100" step="10" required>
+    <button type="submit">Save</button>
+    <span class="status" id="status"></span>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>
